@@ -171,7 +171,7 @@ Building this project was a great exercise in full-stack development. It reinfor
 
 **Clone the repo:**
 ```powershell
-git clone https://github.com/G26karthik/Lost-and-Found.git
+https://github.com/arpit-jaiswal-dev/Lost-and-found.git
 cd Lost-and-Found
 ```
 
