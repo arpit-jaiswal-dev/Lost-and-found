@@ -3,7 +3,6 @@
 
 Welcome to the College Lost & Found platform! This is a modern web app built with the MERN stack (MongoDB, Express, React, Node.js) and Cloudinary for image storage. It helps students and staff report, search, and recover lost or found items on campus. The project is designed for real-world use, with a focus on clean code, robust authentication, and a smooth user experience.
 
-Deployed : https://lost-and-found-rdjb.onrender.com/
 
 ---
 
