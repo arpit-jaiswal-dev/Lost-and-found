@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: college-lost-and-found-server
+    env: node
+    buildCommand: cd ../client && npm install && npm run build && cd ../server && npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: NODE_ENV
+        value: production
+    rootDir: server
+    plan: free
+    autoDeploy: true
