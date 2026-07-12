@@ -22,16 +22,9 @@ app.use('/api/users', userRoutes);
 app.use('/api/items', itemRoutes);
 
 // Serve React build in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-  });
-} else {
-  app.get('/', (req, res) => {
-    res.send('API is running...');
-  });
-}
+app.get('/', (req, res) => {
+  res.send('Lost & Found API is running...');
+});
 
 // Error handling middleware
 app.use((err, req, res, next) => {
